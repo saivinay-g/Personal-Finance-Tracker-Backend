@@ -53,11 +53,11 @@ Update credentials as needed in:
 
 ### Option A: Maven
 
-bash mvn spring-boot:run
+```mvn spring-boot:run```
 
 
 ### Option B: Maven Wrapper
-bash ./mvnw spring-boot:run
+```./mvnw spring-boot:run```
 
 
 The API will be available at:
@@ -71,7 +71,7 @@ Example credentials are configured in the security config:
 - `saivinay / saivinay123`
 
 ### Example (curl)
-bash curl -u admin:admin123 [http://localhost:8080/api/v1/users/all](http://localhost:8080/api/v1/users/all)
+```curl -u admin:admin123 [http://localhost:8080/api/v1/users/all](http://localhost:8080/api/v1/users/all)```
 
 ## API Endpoints
 
@@ -85,7 +85,7 @@ Base paths:
 `POST /api/v1/auth/register`
 
 Body:
-json { "username": "john", "email": "john@example.com", "password": "secret" }
+```{ "username": "john", "email": "john@example.com", "password": "secret" }```
 
 #### CSRF Token (if needed by a frontend)
 `GET /api/v1/auth/get-token`
@@ -111,7 +111,7 @@ json { "username": "john", "email": "john@example.com", "password": "secret" }
 `POST /api/v1/expense/expenses`
 
 Body:
-json { "userId": 1, "amount": 25.5, "category": "Food", "description": "Lunch" }
+```{ "userId": 1, "amount": 25.5, "category": "Food", "description": "Lunch" }```
 
 
 #### Get an expense by userId and expenseId
@@ -121,7 +121,7 @@ json { "userId": 1, "amount": 25.5, "category": "Food", "description": "Lunch" }
 `PUT /api/v1/expense/expenses/{expenseId}`
 
 Body:
-json { "userId": 1, "amount": 30.0, "category": "Food", "description": "Lunch (updated)" 
+```{ "userId": 1, "amount": 30.0, "category": "Food", "description": "Lunch"}``` 
 
 
 #### Delete an expense by expenseId
@@ -148,7 +148,7 @@ Configured in `application.properties`.
 
 ## Testing
 Run unit tests with:
-bash mvn test
+```mvn test```
 
 
 ## Notes / Known Limitations
