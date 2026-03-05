@@ -22,6 +22,9 @@ target/
 ### Logs ###
 *.log
 
+
+.DS_Store
+
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
